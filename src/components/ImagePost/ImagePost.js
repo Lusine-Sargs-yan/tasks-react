@@ -5,12 +5,6 @@ const BASE_URL = 'https://harvardartmuseums.org/browse';
 class ImagePost extends React.Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      postsData: {
-        posts: []
-      }
-    }
   }
   componentDidMount() {
     this.getImagePosts();
@@ -18,30 +12,15 @@ class ImagePost extends React.Component {
 
   getImagePosts = () => {
     fetch(BASE_URL)
-    .then((response) => {
-      console.log(response.json());
-      return response.json()
-    })
-    .then((imagePosts) => {
-      console.log(imagePosts, "image posts")
-
-      this.setState({
-        postsData: {
-          posts: imagePosts
-        }
-      });
-
+    .then((response) => response.json())
+    .then((browse) => {
+      console.log(browse, "images:::");
     })
   }
 
-
   render() {
-    // console.log(this.state);
-    // console.log(this.state.postsData.posts);
     return (
-      <div>
-        {/* {this.state.postsData.posts.title} */}
-      </div>
+      <div></div>
     )
   }
 

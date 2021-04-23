@@ -1,5 +1,7 @@
 import Calculator from './components/Calculator/Calculator';
-import ImagePost from './components/ImagePost/ImagePost';
+//import ImagePost from './components/ImagePost/ImagePost';
+import CountdownTimer from './components/TicTacToe/CountdownTimer';
+import Game from "./components/TicTacToe/Game";
 //import './App.css';
 
 function App() {
@@ -9,7 +11,12 @@ function App() {
       <br />
       <br />
       <br />
-      <ImagePost />
+      {/* <ImagePost /> */}
+
+      <br />
+      <CountdownTimer />
+      <br />
+      <Game />
     </div>
   );
 }
