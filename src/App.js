@@ -1,10 +1,15 @@
 import Calculator from './components/Calculator/Calculator';
-import './App.css';
+import ImagePost from './components/ImagePost/ImagePost';
+//import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <Calculator />
+      <br />
+      <br />
+      <br />
+      <ImagePost />
     </div>
   );
 }
