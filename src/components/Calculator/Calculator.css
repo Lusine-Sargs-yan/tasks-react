@@ -1,0 +1,41 @@
+.title {
+  color: #20bd1b;
+}
+
+.input-name {
+  color: #3fa13a;
+}
+input {
+  color: #20bd1b;
+  border-color: #aedaac;
+}
+.add-button {
+  color: #20bd1b;
+  background-color: #ddf1df;
+  border-color: #ddf1df;
+  border-radius: 2px;
+
+}
+
+.subtract-button {
+  color: #a53544;
+  border-color: #eed0d4;
+  border-radius: 2px;
+}
+
+.multiply-button {
+  color: #4425aa;
+  border-color: #d2cde4;
+  border-radius: 2px;
+}
+.divide-button {
+  color: #9b145e;
+  border-color: #ecc5db;
+  border-radius: 2px;
+}
+
+.reset-button {
+  color: #a4b92a;
+  border-color: #dfebc5;
+  border-radius: 2px;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Calculator/Calculator.css'
 
 class Calculator extends React.Component {
   constructor(props) {
@@ -61,8 +62,8 @@ class Calculator extends React.Component {
   render() {
     return (
       <div>
-        <h2>The result is: {this.state.result}</h2>
-        <label>
+        <h2 className="title">The result is: {this.state.result}</h2>
+        <label className="input-name">
           Number1 
           <input
           type="number"
@@ -70,7 +71,8 @@ class Calculator extends React.Component {
           value={this.state.number1}
           />
         </label>
-        <label>
+        <br />
+        <label className="input-name">
           Number2
           <input
           type="number"
@@ -80,11 +82,11 @@ class Calculator extends React.Component {
         </label>
         <br />
         <br />
-        <button onClick={this.add}>Add</button>
-        <button onClick={this.subtract}>Subtract</button>
-        <button onClick={this.multiply}>Multiply</button>
-        <button onClick={this.divide}>Divide</button>
-        <button onClick={this.reset}>Reset</button>
+        <button onClick={this.add} className="add-button">Add</button>
+        <button onClick={this.subtract} className="subtract-button">Subtract</button>
+        <button onClick={this.multiply} className="multiply-button">Multiply</button>
+        <button onClick={this.divide} className="divide-button">Divide</button>
+        <button onClick={this.reset} className="reset-button">Reset</button>
 
       </div>
 
