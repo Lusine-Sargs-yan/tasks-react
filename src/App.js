@@ -1,7 +1,9 @@
 import Calculator from './components/Calculator/Calculator';
-//import ImagePost from './components/ImagePost/ImagePost';
+import MuseumImage from './components/MuseumImage/MuseumImage';
 import CountdownTimer from './components/TicTacToe/CountdownTimer';
 import Game from "./components/TicTacToe/Game";
+
+
 //import './App.css';
 
 function App() {
@@ -11,12 +13,14 @@ function App() {
       <br />
       <br />
       <br />
-      {/* <ImagePost /> */}
-
-      <br />
       <CountdownTimer />
       <br />
       <Game />
+      <br />
+      <br />
+      <br />
+      <MuseumImage />
+
     </div>
   );
 }
