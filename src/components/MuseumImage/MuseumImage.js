@@ -6,13 +6,26 @@ const BASE_URL2 = "https://harvardartmuseums.org/browse?load_amount=30&offset=12
 
 function MuseumImage() {
   const [records, setRecords] = useState([]);
+  const [info, setInfo] = useState({
+    pageCount: 0,
+    currentPage: 1,
+  });
 
   useEffect(() => {
     fetch(BASE_URL2)
       .then((response) => response.json())
       .then((data) => {
         setRecords(data.records);
+        
         console.log(data.info);
+        console.log(data.info.pages);
+
+        let pages = Math.ceil(data.info.pages/ data.info.totalrecordsperquery);
+        //console.log(pages, "pages count");
+        setInfo({
+          pageCount: pages,
+          currentPage: 1,
+        })
       });
   }, []);
 
@@ -37,6 +50,8 @@ function MuseumImage() {
         );
       })}
       <div>{records.length}</div>
+      <div>{info.pageCount}</div>
+      <div>{info.currentPage}</div>
     </div>
   );
 }
