@@ -51,13 +51,6 @@ function MuseumImage() {
     pages.push(number);
   }
 
-  // const renderPages = pages.map((elem) => {
-  //   return (
-  //     <span key={elem} id={elem} onClick={handleClick}>
-  //       {elem}
-  //     </span>
-  //   );
-  // });
 
   const indexOfLastRecords = info.pageCount * info.totalRecordsPerQuery;
   console.log(indexOfLastRecords, "aaa");
