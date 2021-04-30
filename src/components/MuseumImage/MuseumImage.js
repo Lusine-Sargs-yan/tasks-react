@@ -53,12 +53,12 @@ function MuseumImage() {
 
 
   const indexOfLastRecords = info.pageCount * info.totalRecordsPerQuery;
-  console.log(indexOfLastRecords, "aaa");
+  console.log(indexOfLastRecords, "indexOfLastRecords::::");
   const indexOfFirstRecords = indexOfLastRecords - info.totalRecordsPerQuery;
-  console.log(indexOfFirstRecords, "hhh");
+  console.log(indexOfFirstRecords, "indexOfFirstRecords:::");
 
   const getCurrentPageOfRecord = records.slice(indexOfFirstRecords, indexOfLastRecords);
-  console.log(getCurrentPageOfRecord , 'jjj');
+  console.log(getCurrentPageOfRecord, 'getCurrentPageOfRecord');
 
   return (
     <div>
