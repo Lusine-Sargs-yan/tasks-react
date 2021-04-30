@@ -1,0 +1,12 @@
+
+.pagination span{
+
+  padding: 7px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  color: #b15088;
+}
+
+.loading {
+  color: #c73d8d;
+}
