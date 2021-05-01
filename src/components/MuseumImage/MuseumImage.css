@@ -1,12 +1,33 @@
+h2 {
+  color: #74154c;
+}
 
 .pagination span{
 
   padding: 7px;
-  border: 1px solid #fff;
+  border: 2px solid #ca9db7; 
   cursor: pointer;
   color: #b15088;
 }
 
+.pagination span.active {
+  background-color: #ffffff;
+  color: #000;
+
+}
+
 .loading {
   color: #c73d8d;
+}
+
+.prev-button {
+  color: #491143;
+  border-color: #ecc5db;
+  border-radius: 2px;
+}
+
+.next-button {
+  color: #491143;
+  border-color: #ecc5db;
+  border-radius: 2px;
 }
